@@ -11,10 +11,11 @@ public class gamechanger {
         HashMap<Integer,Integer> newMap = new HashMap<>();
         int num = sc.nextInt();
         int[] arr = new int[num];
+        int num2;
 
         for(int i=0;i<num;i++){
-            arr[i] = sc.nextInt();
-            newMap.put(arr[i],0);
+            num2 = sc.nextInt();
+            newMap.put(num2,0);
         } 
         
         int single = sc.nextInt();
