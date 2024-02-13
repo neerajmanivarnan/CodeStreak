@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "codeReedCopy",
+      "request": "launch",
+      "mainClass": "codeReedCopy",
+      "projectName": "codestreak_16317ccc"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "java",
       "request": "launch",
