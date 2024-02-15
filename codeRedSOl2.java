@@ -15,7 +15,7 @@ class patient {
     }
 }
 
-public class codeRed {
+public class codeRedSOl2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
