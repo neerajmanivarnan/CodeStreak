@@ -10,7 +10,7 @@
     },
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
+      "type": "java",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
