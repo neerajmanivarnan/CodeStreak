@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "day14q1",
+      "request": "launch",
+      "mainClass": "day14q1",
+      "projectName": "codestreak_16317ccc"
+    },
+    {
+      "type": "java",
       "name": "codeReedCopy",
       "request": "launch",
       "mainClass": "codeReedCopy",
