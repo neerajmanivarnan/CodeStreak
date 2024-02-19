@@ -12,7 +12,7 @@ public class treasurehunt{
             arr[i] = sc.nextInt();
         }
 
-        int d = arr[1] - arr[0];
+        int d = findD(arr);
 
         boolean flag = ifMiss(arr,d);
 
@@ -22,11 +22,38 @@ public class treasurehunt{
              result = findMissBT(arr,d);
         }
 
+        
+
        
         
         System.out.println(result);
 
     }
+
+    
+
+
+
+    private static int findD(int[] arr) {
+        int num;
+        int result = -1;
+
+       HashMap<Integer,Integer> newMap = new HashMap<>();
+       for(int i=0;i<arr.length-1;i++){
+        num = arr[i+1] - arr[i];
+        if(newMap.containsKey(num)){
+            result = num;
+            break;
+        }else{
+            newMap.put(arr[i+1]-arr[i], 0);
+        }
+       }
+       return result;
+    }
+
+
+
+
 
     private static int findMiss(int[] arr, int d) {
         int num = arr[0];
@@ -52,8 +79,8 @@ public class treasurehunt{
         }
 
         int num;
-        for(int i=1;i<arr.length;i=i+d){
-            num = i;
+        for(int i=0,j=arr[0];i<arr.length;i++,j=j+d){
+            num = j;
             if(newMap.containsKey(num)){
                 continue;
             }else{
